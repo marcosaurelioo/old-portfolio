@@ -2,7 +2,7 @@ import React from "react";
 
 import ReactLogo from "../assets/react.svg";
 import JavaScript from "../assets/javascript.svg";
-import TypeScript from "../assets/typeScript.svg";
+import TypeScript from "../assets/typescript.svg";
 import NextJs from "../assets/nextjs.svg";
 import Jest from "../assets/jest.svg";
 import Css from "../assets/css3.svg";
