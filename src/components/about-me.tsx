@@ -2,7 +2,7 @@ import React from "react";
 
 import ReactLogo from "../assets/react.svg";
 import JavaScript from "../assets/javascript.svg";
-import TypeScript from "../assets/TypeScript.svg";
+import TypeScript from "../assets/typeScript.svg";
 import NextJs from "../assets/nextjs.svg";
 import Jest from "../assets/jest.svg";
 import Css from "../assets/css3.svg";
@@ -46,11 +46,11 @@ const AboutMe = () => {
           </div>
           <div className="image-container">
             <img draggable="false" src={Html} height={65} />
-            <span>HTML</span>
+            <span>HTML5</span>
           </div>
           <div className="image-container">
             <img draggable="false" src={Css} height={65} />
-            <span>CSS</span>
+            <span>CSS3</span>
           </div>
         </div>
       </div>
