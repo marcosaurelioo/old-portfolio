@@ -6,7 +6,7 @@ import { Body, WorkBox, WorkContent, Button } from "../styles/components/works";
 import Cinema from "../assets/images/cinema.jpg";
 import Discord from "../assets/images/discord.png";
 import Food from "../assets/images/food.jpg";
-import Games from "../assets/images/games.png";
+import Games from "../assets/images/games.jpg";
 
 const MyWorks = () => {
   const [firstIntersecting, setFirstIntersecting] = useState<boolean>();

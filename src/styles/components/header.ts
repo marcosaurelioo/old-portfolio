@@ -83,6 +83,13 @@ export const OpenedMenu = styled.div`
   & .spacing {
     padding-top: 10px;
   }
+  & .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+  }
   & h1 {
     color: #000;
     font-family: "Montserrat", sans-serif;
@@ -106,20 +113,8 @@ export const OpenedMenu = styled.div`
       }
     }
   }
-  span {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    font-family: "Montserrat", sans-serif;
-    color: #000;
-    font-weight: bold;
-    font-size: 21px;
-  }
-
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 690px) {
+    padding: 10px 40px !important;
     h1 {
       font-size: 30px;
     }

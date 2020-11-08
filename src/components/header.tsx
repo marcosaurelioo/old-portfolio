@@ -41,7 +41,6 @@ const Header = ({ children }: any) => {
                 <h1 className="spacing">Linkedin</h1>
               </Link>
             </div>
-            <span>marcosaureliolelo@outlook.com</span>
           </div>
         </OpenedMenu>
       )}
