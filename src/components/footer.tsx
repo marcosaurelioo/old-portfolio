@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <Body>
       <div className="content">
-
         <div className="title-box ">
           <Link href="#">
             <h1 className="glitch" data-text="MAARK">
@@ -16,7 +15,6 @@ const Footer = () => {
           </Link>
           <span>Top</span>
         </div>
-
         <div className="redirects">
           <Link href="https://github.com/Maark007">
             <span>GITHUB</span>
