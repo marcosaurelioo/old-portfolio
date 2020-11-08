@@ -14,8 +14,8 @@ https://maark.vercel.app/
 
 ## Preview
 
-![Optional text](src/assets/github/main.PNG)
-![Optional text](src/assets/github/second.PNG)
+![Optional text](src/assets/GitHub/main.PNG)
+![Optional text](src/assets/GitHub/second.PNG)
 
 ## How run my app
 
