@@ -67,4 +67,16 @@ h1, h2, h3, h4, span, p {
   text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
   animation: ${glitchAnim2} 3s infinite linear alternate-reverse;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
 `;

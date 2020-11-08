@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { openWindow, closeWindow } from "../animations/keyframes";
 
 type ToogleProps = {
-  isOpen: boolean;
+  isOpen: boolean | undefined;
 };
 
 export const Content = styled.div`
@@ -55,7 +55,11 @@ export const ToggleIcon = styled.div<ToogleProps>`
 `;
 
 export const FloatHeader = styled.div<ToogleProps>`
-  animation: ${closeWindow} 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+  ${(props) =>
+    props.isOpen === false &&
+    css`
+      animation: ${closeWindow} 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+    `}
   width: 100%;
   ${(props) =>
     props.isOpen &&
@@ -70,4 +74,54 @@ export const FloatHeader = styled.div<ToogleProps>`
         transition: color 0.75s ease-in-out;
       }
     `}
+`;
+
+export const OpenedMenu = styled.div`
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  & .spacing {
+    padding-top: 10px;
+  }
+  & h1 {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    position: relative;
+    font-size: 2.5rem;
+    width: fit-content;
+    :before {
+      content: "";
+      position: absolute;
+      width: 0;
+      bottom: 0;
+      height: 3px;
+      background: #000;
+      transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+    }
+    :hover {
+      :before {
+        transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
+        width: 100%;
+      }
+    }
+  }
+  span {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+  }
 `;

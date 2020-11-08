@@ -69,7 +69,7 @@ const MyWorks = () => {
 
   return (
     <Body>
-      <div className="content">
+      <div id="works" className="content">
         <h1>Works</h1>
         <div className="works-content">
           <WorkBox image={Cinema} effect={firstIntersecting}>

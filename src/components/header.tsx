@@ -1,23 +1,49 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
-import { Content, ToggleIcon, FloatHeader } from "../styles/components/header";
+import {
+  Content,
+  ToggleIcon,
+  FloatHeader,
+  OpenedMenu,
+} from "../styles/components/header";
 
 const Header = ({ children }: any) => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState<any>(undefined);
+
   return (
     <FloatHeader isOpen={openMenu}>
       <Content>
         <div>
           <h3>MAARK</h3>
         </div>
-        <div className="menu" onClick={() => setOpenMenu((prev) => !prev)}>
+        <div
+          className="menu"
+          onClick={() => setOpenMenu((prev: boolean) => !prev)}
+        >
           <ToggleIcon isOpen={openMenu} />
         </div>
       </Content>
       {openMenu && (
-        <a href="#myself" onClick={() => setOpenMenu(false)}>
-          Olá
-        </a>
+        <OpenedMenu>
+          <div className="content">
+            <div>
+              <Link href="#myself">
+                <h1 onClick={() => setOpenMenu(false)}>About-me</h1>
+              </Link>
+              <Link href="#works">
+                <h1 onClick={() => setOpenMenu(false)} className="spacing">Works</h1>
+              </Link>
+              <Link href="https://github.com/Maark007">
+                <h1 className="spacing">Github</h1>
+              </Link>
+              <Link href="https://www.linkedin.com/in/marcos007/">
+                <h1 className="spacing">Linkedin</h1>
+              </Link>
+            </div>
+            <span>marcosaureliolelo@outlook.com</span>
+          </div>
+        </OpenedMenu>
       )}
       {!openMenu && <div className="children-content">{children}</div>}
     </FloatHeader>
