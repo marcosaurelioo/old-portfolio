@@ -11,7 +11,7 @@ export const Title = () => {
         <h2 className="glitch" data-text="I AM MARCOS AURELIO">
           I AM MARCOS AURELIO
         </h2>
-        <h4>I'm Frontend developer.</h4>
+        <h4>Intuitive developer.</h4>
         <Link href="#myself">
           <Button>MY WORKS</Button>
         </Link>

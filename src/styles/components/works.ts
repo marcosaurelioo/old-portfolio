@@ -126,9 +126,10 @@ export const Button = styled.button<WorkBoxProps>`
   width: 210px;
   border: 1px solid #fff;
   color: #fff;
+  font-weight: bold;
   background: transparent;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.7s;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);

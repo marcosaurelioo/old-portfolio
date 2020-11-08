@@ -16,9 +16,9 @@ const AboutMe = () => {
       <div className="paragraph">
         <h1>Who's this Guy ?</h1>
         <p>
-          I'm Marcos Aurélio, better known as MAARK. I like create smart
-          interfaces with web technologies. I love make UI effects, animations
-          and creating intuitive, dynamic user experiences.
+          Hello, I'm Marcos Aurélio. I like to create smart interfaces with web
+          technologies, make user interface effects, animations and create
+          intuitive and dynamic user experiences.
         </p>
       </div>
       <div className="paragraph top">

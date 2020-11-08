@@ -54,6 +54,7 @@ export const Button = styled.button`
   width: 210px;
   border: 1px solid #fff;
   color: #fff;
+  font-weight: bold;
   background: transparent;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
