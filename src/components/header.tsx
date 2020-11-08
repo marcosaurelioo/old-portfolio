@@ -15,7 +15,7 @@ const Header = ({ children }: any) => {
     <FloatHeader isOpen={openMenu}>
       <Content>
         <div>
-          <h3>MAARK</h3>
+          <h3 className="glitch" data-text="MAARK">MAARK</h3>
         </div>
         <div
           className="menu"
