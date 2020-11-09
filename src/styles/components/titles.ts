@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Body = styled.div`
-  height: 90vh;
   width: 100%;
   padding: 130px 8vw;
   transition: all 0.7s;
+  min-height: 450px;
   h3 {
     font: 19px Anurati;
     opacity: 0.5;

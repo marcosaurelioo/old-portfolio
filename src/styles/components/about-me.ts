@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Body = styled.div`
-  min-height: 95vh;
   height: auto;
   width: 100%;
-  padding: 10px 0; 
+  padding: 10px 0 20px 0; 
+  margin: 55px 0;
   & h1 {
     color: #fff;
     width: 100%;

@@ -26,7 +26,7 @@ const AboutMe = () => {
         <div className="logo-content">
           <div className="image-container">
             <img draggable="false" src={ReactLogo} height={65} />
-            <span>React-JS</span>
+            <span>React</span>
           </div>
           <div className="image-container">
             <img draggable="false" src={JavaScript} height={65} />
@@ -38,11 +38,11 @@ const AboutMe = () => {
           </div>
           <div className="image-container">
             <img draggable="false" src={NextJs} height={65} />
-            <span>Next-JS</span>
+            <span>Next</span>
           </div>
           <div className="image-container">
             <img draggable="false" src={Jest} height={65} />
-            <span>Jest-JS</span>
+            <span>Jest</span>
           </div>
           <div className="image-container">
             <img draggable="false" src={Html} height={65} />
