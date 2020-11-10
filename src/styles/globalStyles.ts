@@ -35,6 +35,12 @@ h1, h2, h3, h4, span, p {
   color: #fff;
 }
 
+.reset {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
 .glitch {
   position: relative;
   color: white;

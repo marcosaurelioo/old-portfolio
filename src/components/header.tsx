@@ -15,7 +15,9 @@ const Header = ({ children }: any) => {
     <FloatHeader isOpen={openMenu}>
       <Content>
         <div>
-          <h3 className="glitch" data-text="MAARK">MAARK</h3>
+          <h3 className="glitch" data-text="MAARK">
+            MAARK
+          </h3>
         </div>
         <div
           className="menu"
@@ -32,13 +34,19 @@ const Header = ({ children }: any) => {
                 <h1 onClick={() => setOpenMenu(false)}>About-me</h1>
               </Link>
               <Link href="#works">
-                <h1 onClick={() => setOpenMenu(false)} className="spacing">Works</h1>
+                <h1 onClick={() => setOpenMenu(false)} className="spacing">
+                  Works
+                </h1>
               </Link>
               <Link href="https://github.com/Maark007">
-                <h1 className="spacing">Github</h1>
+                <a target="_blank" className="reset">
+                  <h1 className="spacing">Github</h1>
+                </a>
               </Link>
               <Link href="https://www.linkedin.com/in/marcos007/">
-                <h1 className="spacing">Linkedin</h1>
+                <a target="_blank" className="reset">
+                  <h1 className="spacing">Linkedin</h1>
+                </a>
               </Link>
             </div>
           </div>

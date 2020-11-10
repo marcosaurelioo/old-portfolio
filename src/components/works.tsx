@@ -25,7 +25,6 @@ const MyWorks = () => {
         const { isIntersecting, intersectionRatio } = entry;
         setFirstIntersecting(isIntersecting);
         if (isIntersecting === true || intersectionRatio > 0) {
-          console.log(entry.target);
           firstObserver.unobserve(entry.target);
         }
       });
@@ -78,9 +77,13 @@ const MyWorks = () => {
                 <div className="work-box">
                   <h3>CINEMA</h3>
                   <span>The Next generation movies websites.</span>
-                  <Link href="https://cinema-ten.vercel.app/">
-                    <Button effect={firstIntersecting}>Visit Website</Button>
-                  </Link>
+                  <Button
+                    href="https://cinema-ten.vercel.app/"
+                    target="_black"
+                    effect={firstIntersecting}
+                  >
+                    Visit Website
+                  </Button>
                 </div>
               </WorkContent>
             </div>
@@ -95,9 +98,13 @@ const MyWorks = () => {
                 <div className="work-box">
                   <h3>Food</h3>
                   <span>Are you hungry ?</span>
-                  <Link href="https://food-challenge.now.sh/">
-                    <Button effect={secondIntersecting}>Visit Website</Button>
-                  </Link>
+                  <Button
+                    target="_black"
+                    href="https://food-challenge.now.sh"
+                    effect={secondIntersecting}
+                  >
+                    Visit Website
+                  </Button>
                 </div>
               </WorkContent>
             </div>
@@ -112,9 +119,13 @@ const MyWorks = () => {
                 <div className="work-box">
                   <h3>Chat</h3>
                   <span>Real Time chat.</span>
-                  <Link href="https://whatsapp122.netlify.app/">
-                    <Button effect={thirdIntersecting}>Visit Website</Button>
-                  </Link>
+                  <Button
+                    target="_black"
+                    href="https://whatsapp122.netlify.app/"
+                    effect={thirdIntersecting}
+                  >
+                    Visit Website
+                  </Button>
                 </div>
               </WorkContent>
             </div>
@@ -129,9 +140,13 @@ const MyWorks = () => {
                 <div className="work-box">
                   <h3>Hyldan</h3>
                   <span>Do you like games ? This is your place.</span>
-                  <Link href="https://hyldan.netlify.app/">
-                    <Button effect={fourthIntersecting}>Visit Website</Button>
-                  </Link>
+                  <Button
+                    target="_black"
+                    href="https://hyldan.netlify.app/"
+                    effect={fourthIntersecting}
+                  >
+                    Visit Website
+                  </Button>
                 </div>
               </WorkContent>
             </div>

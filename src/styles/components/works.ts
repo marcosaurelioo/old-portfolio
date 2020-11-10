@@ -109,7 +109,7 @@ export const WorkContent = styled.div`
   }
 `;
 
-export const Button = styled.button<WorkBoxProps>`
+export const Button = styled.a<WorkBoxProps>`
   @keyframes setZindex {
     0% {
       z-index: 0;
@@ -118,6 +118,7 @@ export const Button = styled.button<WorkBoxProps>`
       z-index: 0;
     }
   }
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
