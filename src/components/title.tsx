@@ -12,7 +12,7 @@ export const Title = () => {
     <Body>
       <div className="title-container">
         <h3>HELLO WORLD</h3>
-        <h2>I AM MARCOS AURELIO</h2>
+        <h2 className="glitch" data-text="I AM MARCOS AURELIO">I AM MARCOS AURELIO</h2>
         <h4>Intuitive developer.</h4>
         <Button onClick={onLinkClick}>MY WORKS</Button>
       </div>
